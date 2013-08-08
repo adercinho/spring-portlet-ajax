@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+		<taglib>
+		    <taglib-uri>http://java.sun.com/portlet_2_0</taglib-uri>
+		    <taglib-location>/WEB-INF/tld/portlet_2_0.tld</taglib-location>
+		</taglib>
+
+	<!-- A Definição do Root Spring Container compartilhado por todos os Servlets e Filters -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+	</context-param>
+	
+	<!-- Cria o Spring Container compartilhando para todos os Servlets e Filters. -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Bridge Servlet for converting a PortletRequest to ServletRequest -->
+	<servlet>
+		<servlet-name>ViewRendererServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.ViewRendererServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- Qualquer requisição vinda da URL /WEB-INF/servlet/view será enviada para a servlet ViewRendererServlet -->
+	<servlet-mapping>
+		<servlet-name>ViewRendererServlet</servlet-name>
+		<url-pattern>/WEB-INF/servlet/view</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
