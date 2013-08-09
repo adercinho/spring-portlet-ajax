@@ -10,62 +10,13 @@
 	<portlet:namespace />
 </c:set>
 
+<%
+    String baseURL = renderResponse.encodeURL(renderRequest.getContextPath());
+    renderRequest.setAttribute("baseURL", baseURL);
+%>
 
 <portlet:resourceURL var="enviaDadosAlunoAjaxURL" id="enviaDadosAlunoAjaxURL" escapeXml="false" />
-
-
-<style type="text/css" >
-.portletSpringAjax-p
-{
-	margin:0px;
-}
-
-.portletSpringAjax-label 
-{
-	display:block;
-	font:12px verdana; 
-	color:#666;	
-	margin:2px;	
-	margin-top:10px;
-	cursor:pointer;
-}
-
-.portletSpringAjax-fieldset
-{
-	width:250px;
-	padding:15px;
-}
-
-.portletSpringAjax-legend
-{
-   	width:70%;
-	background-color:#dde;
-	border:0px solid #dcdcdc;
-	padding:5px;
-	margin:0px;
-	font:14px 'Trebuchet MS'; 
-	color:#666;		
-	text-align:center;
-}
-
-.portletSpringAjax-out
-{
-	border:1px solid #dcdcdc;
-	padding:2px;
-	font:12px verdana; 
-	color:#666;	
-}
-
-.portletSpringAjax-btnsub
-{
-	border:2px solid #dcdcdc;
-	padding:0px;
-	width:80px;
-	height: 30px;
-	font:12px verdana; 
-	color:#333;	
-}
-</style>
+<link rel="stylesheet" type="text/css" href="${baseURL}/resources/css/style.css" />
 <script type="text/javascript" src="${baseURL}/resources/js/ajaxAlunoForm.js"></script>
 
 

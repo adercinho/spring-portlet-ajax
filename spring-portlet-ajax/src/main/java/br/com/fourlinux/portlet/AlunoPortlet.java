@@ -32,6 +32,7 @@ public class AlunoPortlet {
 	
 	@ModelAttribute("aluno")
 	public Aluno getCommandObjectAluno() {
+		System.out.println("Cria o objeto Aluno");
 		return new Aluno();
 	}
 }
