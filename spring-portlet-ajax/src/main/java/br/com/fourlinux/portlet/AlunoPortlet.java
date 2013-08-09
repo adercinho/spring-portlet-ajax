@@ -17,9 +17,10 @@ import br.com.fourlinux.model.Aluno;
 public class AlunoPortlet {
 	
 	@RenderMapping
-	public ModelAndView showFormNewsletter(RenderResponse response) {
+	public ModelAndView showFormAluno(RenderResponse response) {
 		ModelAndView modelAndView  = new ModelAndView();
 	    modelAndView.setViewName("alunoForm");
+	    System.out.println("Passou no RenderMapping!");
 		return modelAndView;
 	}
 

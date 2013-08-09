@@ -1,0 +1,48 @@
+.portletSpringAjax-p
+{
+	margin:0px;
+}
+
+.portletSpringAjax-label 
+{
+	display:block;
+	font:12px verdana; 
+	color:#666;	
+	margin:2px;	
+	margin-top:10px;
+	cursor:pointer;
+}
+
+.portletSpringAjax-fieldset
+{
+	width:250px;
+	padding:15px;
+}
+
+.portletSpringAjax-legend
+{
+   	width:70%;
+	background-color:#dde;
+	border:0px solid #dcdcdc;
+	padding:5px;
+	margin:0px;
+	font:14px 'Trebuchet MS'; 
+	color:#666;		
+	text-align:center;
+}
+
+.portletSpringAjax-out
+{
+	border:1px solid #dcdcdc;
+	padding:2px;
+	font:12px verdana; 
+	color:#666;	
+}
+
+.portletSpringAjax-btnsub
+{
+	padding:2px;
+	font:12px verdana; 
+	color:white !important;
+	background-color: red !important;	
+}

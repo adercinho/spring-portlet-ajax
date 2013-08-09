@@ -1,9 +1,9 @@
-.portletSpringMVC-p
+.portletSpringAjax-p
 {
 	margin:0px;
 }
 
-.portletSpringMVC-label 
+.portletSpringAjax-label 
 {
 	display:block;
 	font:12px verdana; 
@@ -13,13 +13,13 @@
 	cursor:pointer;
 }
 
-.portletSpringMVC-fieldset
+.portletSpringAjax-fieldset
 {
 	width:250px;
 	padding:15px;
 }
 
-.portletSpringMVC-legend
+.portletSpringAjax-legend
 {
    	width:70%;
 	background-color:#dde;
@@ -31,20 +31,18 @@
 	text-align:center;
 }
 
-.portletSpringMVC-out
+.portletSpringAjax-out
 {
 	border:1px solid #dcdcdc;
 	padding:2px;
 	font:12px verdana; 
 	color:#666;	
-	background:url(../images/l-r.png) no-repeat 0 0;
 }
 
-.portletSpringMVC-btnsub
+.portletSpringAjax-btnsub
 {
 	border:1px solid #dcdcdc;
 	padding:2px;
 	font:12px verdana; 
 	color:#333;	
-	background:url(../images/i-r.png) no-repeat 99% 0;
 }

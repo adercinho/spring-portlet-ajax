@@ -2,8 +2,8 @@
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
 	<portlet>
-		<portlet-name>spring-portlet-mvc</portlet-name>
-		<display-name>Spring Portlet MVC</display-name>
+		<portlet-name>spring-portlet-ajax</portlet-name>
+		<display-name>Spring Portlet Ajax</display-name>
 		
 		<!-- Referencia o DispatcherPortlet fornecido pelo Bridge Spring Container -->
 		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
@@ -20,9 +20,9 @@
 		
 		<!-- Informações Complementares -->
 		<portlet-info>
-			<title>Spring Portlet MVC</title>
-			<short-title>Spring Portlet MVC</short-title>
-			<keywords>spring portlet mvc</keywords>
+			<title>Spring Portlet Ajax</title>
+			<short-title>Spring Portlet Ajax</short-title>
+			<keywords>spring portlet ajax</keywords>
 		</portlet-info>
 	</portlet>
 </portlet-app>

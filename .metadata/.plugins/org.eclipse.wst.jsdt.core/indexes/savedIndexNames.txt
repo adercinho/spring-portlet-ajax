@@ -1,0 +1,7 @@
+INDEX VERSION 1.122+/home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3114906807.index
+2470990275.index
+916762035.index
+2115551404.index
+3195943246.index
+1891367950.index
