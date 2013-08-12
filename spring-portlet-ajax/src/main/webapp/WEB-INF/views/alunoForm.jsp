@@ -14,11 +14,10 @@
 <link rel="stylesheet" type="text/css" href="${baseURL}/resources/css/style.css" />
 <script type="text/javascript" src="${baseURL}/resources/js/ajaxAlunoForm.js"></script>
 
-<input type="hidden" id="portletContext" value="${portletNamespace}" />
 <input type="hidden" id="idURLAluno" value="${enviaDadosAlunoAjaxURL}" />
 
 <!-- Formulário do Ajax -->
-<form:form commandName="aluno" id="alunoForm" modelAttribute="aluno" method="post" onsubmit="enviarDadosAluno(); return false;">
+<form:form id="alunoForm" modelAttribute="aluno" method="post" onsubmit="enviarDadosAluno(); return false;">
 	<fieldset class="portletSpringAjax-fieldset">
 		<legend class="portletSpringAjax-legend">Cadastro do Aluno</legend>			
 				<label class="portletSpringAjax-label" for="nome">Aluno:</label>
@@ -30,9 +29,9 @@
 	</fieldset>
 </form:form>
 
-	<!-- Resultado do Ajax -->
-	<fieldset class="portletSpringAjax-fieldset" style="width: 320px;">
-		<legend class="-legend">Dados do Aluno</legend>
-			<label class="portletSpringAjax-label">Aluno: <strong id="nomeAluno"></strong> </label>
-			<label class="portletSpringAjax-label">Idade: <strong id="idadeAluno"></strong> </label>
-	</fieldset>
+<!-- Resultado do Ajax -->
+<fieldset class="portletSpringAjax-fieldset" style="width: 320px;">
+	<legend class="-legend">Dados do Aluno</legend>
+		<label class="portletSpringAjax-label">Aluno: <strong id="nomeAluno"></strong> </label>
+		<label class="portletSpringAjax-label">Idade: <strong id="idadeAluno"></strong> </label>
+</fieldset>
