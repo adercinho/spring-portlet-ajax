@@ -5,11 +5,6 @@
 
 <portlet:defineObjects />
 
-<!-- Armazeno o namespace string em uma página JSP com variável chamada "portletNamespace" -->
-<c:set var="portletNamespace">
-	<portlet:namespace />
-</c:set>
-
 <%
     String baseURL = renderResponse.encodeURL(renderRequest.getContextPath());
     renderRequest.setAttribute("baseURL", baseURL);
@@ -19,19 +14,15 @@
 <link rel="stylesheet" type="text/css" href="${baseURL}/resources/css/style.css" />
 <script type="text/javascript" src="${baseURL}/resources/js/ajaxAlunoForm.js"></script>
 
-
 <input type="hidden" id="portletContext" value="${portletNamespace}" />
 <input type="hidden" id="idURLAluno" value="${enviaDadosAlunoAjaxURL}" />
 
 <!-- Formulário do Ajax -->
-
 <form:form commandName="aluno" id="alunoForm" modelAttribute="aluno" method="post" onsubmit="enviarDadosAluno(); return false;">
 	<fieldset class="portletSpringAjax-fieldset">
-		<legend class="portletSpringAjax-legend">Cadastro do Aluno</legend>
-				
+		<legend class="portletSpringAjax-legend">Cadastro do Aluno</legend>			
 				<label class="portletSpringAjax-label" for="nome">Aluno:</label>
-				<form:input class="portletSpringAjax-out" id="idAluno" path="nome" placeholder="Aluno" type="text" required="true" maxlength="50" /> 
-				
+				<form:input class="portletSpringAjax-out" id="idAluno" path="nome" placeholder="Aluno" type="text" required="true" maxlength="50" /> 			
 				<label class="portletSpringAjax-label" for="idade">Idade:</label>
 				<form:input class="portletSpringAjax-out" id="idIdade" path="idade" placeholder="idade" size="5" type="text" required="true" maxlength="2" />
 				<p class="portletSpringAjax-p">&nbsp;</p>
@@ -39,8 +30,7 @@
 	</fieldset>
 </form:form>
 
-<!-- Resultado do Ajax -->
-
+	<!-- Resultado do Ajax -->
 	<fieldset class="portletSpringAjax-fieldset" style="width: 320px;">
 		<legend class="-legend">Dados do Aluno</legend>
 			<label class="portletSpringAjax-label">Aluno: <strong id="nomeAluno"></strong> </label>

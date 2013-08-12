@@ -42,6 +42,8 @@
 .portletSpringAjax-btnsub
 {
 	border:1px solid #dcdcdc;
+	width: 100px;
+	height: 30px;
 	padding:2px;
 	font:12px verdana; 
 	color:#333;	

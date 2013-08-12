@@ -1,337 +1,48 @@
-2013-08-09 00:46:46,655 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-wtp does not contain lifecycle mapping metadata
-2013-08-09 00:46:46,664 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
-2013-08-09 00:46:46,665 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
-2013-08-09 00:46:46,667 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
-2013-08-09 00:50:06,741 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
-2013-08-09 00:50:07,342 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-portlet-ajax/src/main/java
-2013-08-09 00:50:07,343 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-portlet-ajax/src/main/resources
-2013-08-09 00:50:07,344 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-portlet-ajax/src/test/java
-2013-08-09 00:50:07,344 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-portlet-ajax/src/test/resources
-2013-08-09 00:50:08,362 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
-2013-08-09 00:50:09,288 [Worker-21] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Failed while installing JBoss Core Portlet 2.0.
-org.eclipse.wst.common.project.facet.core.FacetedProjectFrameworkException: Failed while installing JBoss Core Portlet 2.0.
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.callDelegate(FacetedProject.java:1507) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:441) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345) ~[org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.installProjectFacet(FacetedProject.java:255) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.installPortletFacet(PortletProjectConfigurator.java:150) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.installWarFacets(PortletProjectConfigurator.java:137) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.configureInternal(PortletProjectConfigurator.java:98) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.mavenProjectChanged(PortletProjectConfigurator.java:112) ~[na:na]
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:965) ~[org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:746) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:865) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:101) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20130429-1813.jar:na]
-Caused by: org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.emf.ecore.xmi.FeatureNotFoundException: Feature 'taglib' not found. (platform:/resource/spring-portlet-ajax/src/main/webapp/WEB-INF/web.xml, 6, 11)
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278) ~[na:na]
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1003) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:169) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:215) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.loadProviders(AbstractMergedModelProvider.java:261) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.access$2(AbstractMergedModelProvider.java:255) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$LoadModelsWorkspaceRunnable.run(AbstractMergedModelProvider.java:278) ~[na:na]
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345) ~[org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.loadModel(AbstractMergedModelProvider.java:249) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.getMergedModel(AbstractMergedModelProvider.java:219) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.getModelObject(AbstractMergedModelProvider.java:139) ~[na:na]
-	at org.jboss.tools.portlet.core.PortletCoreActivator.getModelProvider(PortletCoreActivator.java:104) ~[na:na]
-	at org.jboss.tools.portlet.core.internal.project.facet.PortletFacetInstallDelegate.execute(PortletFacetInstallDelegate.java:68) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.callDelegate(FacetedProject.java:1477) ~[na:na]
-	... 16 common frames omitted
-Caused by: org.eclipse.emf.ecore.xmi.FeatureNotFoundException: Feature 'taglib' not found. (platform:/resource/spring-portlet-ajax/src/main/webapp/WEB-INF/web.xml, 6, 11)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.reportUnknownFeature(XMLHandler.java:1998) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleUnknownFeature(XMLHandler.java:1962) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.handleUnknownFeature(XMIHandler.java:145) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1906) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1030) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:81) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1008) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:719) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:163) ~[na:na]
-	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:376) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302) ~[na:1.7.0_21]
-	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:253) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259) ~[na:na]
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:811) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274) ~[na:na]
-	... 30 common frames omitted
-2013-08-09 00:50:12,421 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
-2013-08-09 00:50:12,618 [Worker-21] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Failed while installing JBoss Core Portlet 2.0.
-org.eclipse.wst.common.project.facet.core.FacetedProjectFrameworkException: Failed while installing JBoss Core Portlet 2.0.
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.callDelegate(FacetedProject.java:1507) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:441) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345) ~[org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.installProjectFacet(FacetedProject.java:255) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.installPortletFacet(PortletProjectConfigurator.java:150) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.installWarFacets(PortletProjectConfigurator.java:137) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.configureInternal(PortletProjectConfigurator.java:98) ~[na:na]
-	at org.jboss.tools.maven.portlet.configurators.PortletProjectConfigurator.mavenProjectChanged(PortletProjectConfigurator.java:112) ~[na:na]
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:965) ~[org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:746) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:865) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:289) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:67) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.getProjectFacade(MavenBuilder.java:216) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.call(MavenBuilder.java:91) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.call(MavenBuilder.java:1) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1305) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:89) [org.eclipse.m2e.core_1.4.0.20130601-0317.jar:na]
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20130429-1813.jar:na]
-Caused by: org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.emf.ecore.xmi.FeatureNotFoundException: Feature 'taglib' not found. (platform:/resource/spring-portlet-ajax/src/main/webapp/WEB-INF/web.xml, 6, 11)
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278) ~[na:na]
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1003) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:169) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:215) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.loadProviders(AbstractMergedModelProvider.java:261) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.access$2(AbstractMergedModelProvider.java:255) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$LoadModelsWorkspaceRunnable.run(AbstractMergedModelProvider.java:278) ~[na:na]
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345) ~[org.eclipse.core.resources_3.8.100.v20130521-2026.jar:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.loadModel(AbstractMergedModelProvider.java:249) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.getMergedModel(AbstractMergedModelProvider.java:219) ~[na:na]
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.getModelObject(AbstractMergedModelProvider.java:139) ~[na:na]
-	at org.jboss.tools.portlet.core.PortletCoreActivator.getModelProvider(PortletCoreActivator.java:104) ~[na:na]
-	at org.jboss.tools.portlet.core.internal.project.facet.PortletFacetInstallDelegate.execute(PortletFacetInstallDelegate.java:68) ~[na:na]
-	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.callDelegate(FacetedProject.java:1477) ~[na:na]
-	... 36 common frames omitted
-Caused by: org.eclipse.emf.ecore.xmi.FeatureNotFoundException: Feature 'taglib' not found. (platform:/resource/spring-portlet-ajax/src/main/webapp/WEB-INF/web.xml, 6, 11)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.reportUnknownFeature(XMLHandler.java:1998) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleUnknownFeature(XMLHandler.java:1962) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.handleUnknownFeature(XMIHandler.java:145) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1906) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1030) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:81) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1008) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:719) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:163) ~[na:na]
-	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:376) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568) ~[na:1.7.0_21]
-	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302) ~[na:1.7.0_21]
-	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175) ~[na:na]
-	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:253) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259) ~[na:na]
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:811) ~[na:na]
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274) ~[na:na]
-	... 50 common frames omitted
-2013-08-09 00:50:12,675 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 00:50:12,678 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2013-08-09 00:50:12,685 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 00:50:12,686 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2013-08-09 00:54:25,428 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 00:54:25,430 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 00:54:25,432 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 00:54:25,432 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:03:36,375 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:03:36,375 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:03:36,376 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:03:36,376 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:09:07,392 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:09:07,392 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:09:07,393 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:09:07,394 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:10:00,711 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:10:00,711 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:10:00,712 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:10:00,712 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:13:17,958 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:13:17,958 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:13:17,960 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:13:17,960 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:14:57,266 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:14:57,266 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:14:57,268 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:14:57,268 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:15:01,198 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:15:01,198 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:15:01,200 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:15:01,200 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:16:04,489 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:16:04,489 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:16:04,491 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:16:04,491 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:19:15,755 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:19:15,755 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:19:15,757 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:19:15,757 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:19:28,417 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:19:28,417 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:19:28,418 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:19:28,418 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:19:59,620 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:19:59,620 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:19:59,621 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:19:59,622 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:25:23,046 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:25:23,047 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:25:23,050 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:25:23,050 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:26:27,492 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:26:27,493 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:26:27,494 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:26:27,494 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:27:23,819 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:27:23,819 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:27:23,820 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:27:23,820 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:28:55,822 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:28:55,822 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:28:55,824 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:28:55,824 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:29:17,256 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:29:17,256 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:29:17,257 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:29:17,257 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:29:33,014 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:29:33,014 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:29:33,016 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:29:33,016 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:31:07,045 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:31:07,045 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:31:07,046 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:31:07,046 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:31:57,756 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:31:57,756 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:31:57,757 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:31:57,757 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:32:27,220 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:32:27,221 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:32:27,223 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:32:27,223 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:34:23,578 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:34:23,578 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:34:23,579 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:34:23,579 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:35:16,153 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:35:16,153 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:35:16,154 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:35:16,154 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:37:18,551 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:37:18,551 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:37:18,552 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:37:18,552 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:37:47,050 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:37:47,050 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:37:47,051 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:37:47,051 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:38:00,670 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:38:00,670 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:38:00,671 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:38:00,671 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:41:28,472 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:41:28,473 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:41:28,474 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:41:28,474 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:41:48,515 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:41:48,515 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:41:48,516 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:41:48,516 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:43:19,655 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:43:19,655 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:43:19,656 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:43:19,656 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:44:08,870 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:44:08,870 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:44:08,871 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:44:08,872 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:45:36,851 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:45:36,851 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:45:36,852 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:45:36,852 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:46:12,547 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:46:12,548 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:46:12,550 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:46:12,550 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:47:12,733 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:47:12,733 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:47:12,734 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:47:12,734 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:47:17,864 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:47:17,865 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:47:17,866 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:47:17,866 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:47:49,750 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:47:49,750 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:47:49,751 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:47:49,751 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:48:02,773 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:48:02,774 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 01:48:02,775 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 01:48:02,775 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:00:15,246 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:00:15,246 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:00:15,247 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:00:15,247 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:00:53,927 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:00:54,031 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2013-08-09 02:00:54,033 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:00:54,033 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:00:55,056 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:00:55,056 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2013-08-09 02:00:55,057 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:00:55,057 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:01:28,417 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:01:28,418 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2013-08-09 02:01:28,419 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:01:28,420 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:01:38,939 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:01:38,940 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2013-08-09 02:01:38,941 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:01:38,941 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:14:54,401 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:14:54,401 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:14:54,403 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:14:54,403 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:15:22,279 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:15:22,280 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2013-08-09 02:15:22,281 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2013-08-09 02:15:22,281 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 01:34:03,222 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-wtp does not contain lifecycle mapping metadata
+2013-08-10 01:34:03,237 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2013-08-10 01:34:03,237 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2013-08-10 01:34:03,238 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
+2013-08-10 01:35:36,001 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
+2013-08-10 01:35:39,761 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-portlet-ajax/src/main/java
+2013-08-10 01:35:39,762 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-portlet-ajax/src/main/resources
+2013-08-10 01:35:39,763 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-portlet-ajax/src/test/java
+2013-08-10 01:35:39,763 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-portlet-ajax/src/test/resources
+2013-08-10 01:35:40,502 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 9 sec
+2013-08-10 01:35:40,801 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
+2013-08-10 01:35:40,989 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-08-10 01:35:40,991 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2013-08-10 01:35:42,278 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
+2013-08-10 01:35:45,436 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 01:35:45,439 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-08-10 01:35:45,446 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 01:35:45,446 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-08-10 01:38:01,189 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 01:38:01,191 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 01:38:01,193 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 01:38:01,193 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 21:32:32,698 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
+2013-08-10 21:32:40,192 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 21:32:40,195 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-08-10 21:32:40,213 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 21:32:40,214 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-08-10 21:41:01,063 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.fourlinux:portlet:1.0.0-BUILD-SNAPSHOT @ /home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/spring-portlet-ajax/pom.xml.
+2013-08-10 21:41:01,265 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 21:41:01,268 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 21:41:01,269 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 21:41:01,269 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 22:56:15,620 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 22:56:15,620 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 22:56:15,622 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 22:56:15,623 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 22:56:24,761 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 22:56:24,762 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 22:56:24,764 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 22:56:24,765 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 22:56:45,282 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 22:56:45,282 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-10 22:56:45,283 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-10 22:56:45,283 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-08-11 02:59:04,182 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-11 02:59:04,184 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-08-11 02:59:04,186 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-08-11 02:59:04,186 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource

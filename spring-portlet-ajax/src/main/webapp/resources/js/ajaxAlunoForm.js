@@ -11,6 +11,7 @@ function enviarDadosAluno() {
 		data : values,
 		success: function(data){
 			var dados = data.split('-');
+			// atribui os valores vindos do server para o html
 			document.getElementById("nomeAluno").innerHTML = jNoConflict.trim(dados[0]);
 			document.getElementById("idadeAluno").innerHTML = jNoConflict.trim(dados[1]);
 		},
