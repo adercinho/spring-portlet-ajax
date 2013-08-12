@@ -1,3 +1,0 @@
-INDEX VERSION 1.126
-/home/adercio/Área de Trabalho/4Linux/Webcast feito por Adércio/webcast-git/spring-portlet-ajax/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2470990275.index
-/spring-portlet-ajax/src/main/java
