@@ -14,10 +14,8 @@
 <link rel="stylesheet" type="text/css" href="${baseURL}/resources/css/style.css" />
 <script type="text/javascript" src="${baseURL}/resources/js/ajaxAlunoForm.js"></script>
 
-<input type="hidden" id="idURLAluno" value="${enviaDadosAlunoAjaxURL}" />
-
 <!-- Formulário do Ajax -->
-<form:form id="alunoForm" modelAttribute="aluno" method="post" onsubmit="enviarDadosAluno(); return false;">
+<form:form id="alunoForm" commandName="aluno" modelAttribute="aluno" method="post" onsubmit="enviarDadosAluno(); return false;">
 	<fieldset class="portletSpringAjax-fieldset">
 		<legend class="portletSpringAjax-legend">Cadastro do Aluno</legend>			
 				<label class="portletSpringAjax-label" for="nome">Aluno:</label>
