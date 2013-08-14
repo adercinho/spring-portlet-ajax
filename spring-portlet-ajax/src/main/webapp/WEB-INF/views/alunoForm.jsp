@@ -13,7 +13,7 @@
 <portlet:resourceURL var="enviaDadosAlunoAjaxURL" id="enviaDadosAlunoAjaxURL" escapeXml="false" />
 <link rel="stylesheet" type="text/css" href="${baseURL}/resources/css/style.css" />
 <script type="text/javascript" src="${baseURL}/resources/js/ajaxAlunoForm.js"></script>
-
+<input type="hidden" id="idEnviaDadosAlunoAjaxURL" value="${enviaDadosAlunoAjaxURL}" />
 <!-- Formulário do Ajax -->
 <form:form id="alunoForm" commandName="aluno" modelAttribute="aluno" method="post" onsubmit="enviarDadosAluno(); return false;">
 	<fieldset class="portletSpringAjax-fieldset">

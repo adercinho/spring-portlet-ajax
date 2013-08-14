@@ -1,9 +1,8 @@
 
 function enviarDadosAluno() {
 	var jNoConflict = jQuery.noConflict(); 
-	
-	var alunoAjaxURL = document.getElementById("enviaDadosAlunoAjaxURL").value;
-	var values = jNoConflict("#alunoForm").serialize();	
+	var alunoAjaxURL = document.getElementById("idEnviaDadosAlunoAjaxURL").value;
+	var values = jNoConflict("#alunoForm").serialize();
 	
 	jNoConflict.ajax({
 		type : 'GET',
